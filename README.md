@@ -9,7 +9,8 @@ Right click the file and select "get sharable link". (The link will be copied to
 FILEID can be found in the link following ``drive.google.com/open?id=``.  
 
 ### Step 3. Open terminal and run the command line using WGET
-``wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=FILEID' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=FILEID" -O FILENAME && rm -rf /tmp/cookies.txt``
+``wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=FILEID' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=FILEID" -O FILENAME && rm -rf /tmp/cookies.txt``  
+ㄴ This line is originally from Alexander B (@beliys).
 
 ### Step 3. Exercise
 Let's say you want to download a file named "img_align_celeba.zip" from the celebA dataset (Large-scale CelebFaces Attributes Dataset)  
