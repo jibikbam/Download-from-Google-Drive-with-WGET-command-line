@@ -8,7 +8,7 @@ Skip if you already know the link.
 Right click the file and select "get sharable link". (The link will be copied to the clipboard automatically.)  
 FILEID can be found in the link following ``drive.google.com/open?id=``.  
 
-### Step 3. Open terminal and run the command line using WGET
+### Step 2. Open terminal and run the command using WGET
 ``wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=FILEID' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=FILEID" -O FILENAME && rm -rf /tmp/cookies.txt``  
 ㄴ This line is originally from Alexander B (@beliys).
 
