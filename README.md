@@ -1,4 +1,4 @@
-# Download-files-in-Google-Drive-with-WGET-command-line
+# Download-from-Google-Drive-with-WGET-command-line
 
 The command line below describes how to download any large file or data from Google Drive with a command line in terminal.
 It is a bit tricky since large files need confirmation when downloading.
